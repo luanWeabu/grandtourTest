@@ -1,16 +1,7 @@
 "use client";
-import React, { ChangeEvent, useState } from "react";
-import {
-  Box,
-  Grid,
-  Input,
-  Paper,
-  Stack,
-  Typography,
-  styled,
-} from "@mui/material";
+import React, { useState } from "react";
+import { Grid, Typography } from "@mui/material";
 import BaseVideo from "../base/BaseVideo";
-import BaseSearch from "../base/BaseInput";
 import BaseAutoComple from "../base/BaseAutocomple";
 import BaseButton from "../base/BaseButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
