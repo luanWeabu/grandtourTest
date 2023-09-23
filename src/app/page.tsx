@@ -1,11 +1,27 @@
+import ArticleTips from "@/component/Sections/ArticleTipsSections";
+import PopularDestination from "@/component/Sections/PopularDestinationSection";
+import ValueTrips from "@/component/Sections/ValueTripsSections";
+import WhyChooseUs from "@/component/Sections/WhyChososeUs";
 import HeaderHomePage from "@/component/homepage/Header";
-import variables from "../styles/variables.module.scss";
 
 export default function Home() {
   return (
     <main>
       <div>
         <HeaderHomePage />
+        <PopularDestination />
+        <ValueTrips />
+        <WhyChooseUs />
+        <img
+          src="/pexels.jpg"
+          style={{
+            width: "100%",
+            height: 700,
+            objectFit: "cover",
+            paddingTop: "70px",
+          }}
+        />
+        <ArticleTips />
       </div>
     </main>
   );
