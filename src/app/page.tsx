@@ -2,6 +2,7 @@ import ArticleTips from "@/component/Sections/ArticleTipsSections";
 import PopularDestination from "@/component/Sections/PopularDestinationSection";
 import ValueTrips from "@/component/Sections/ValueTripsSections";
 import WhyChooseUs from "@/component/Sections/WhyChososeUs";
+import Footer from "@/component/homepage/Footer";
 import HeaderHomePage from "@/component/homepage/Header";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
           }}
         />
         <ArticleTips />
+        <Footer />
       </div>
     </main>
   );
