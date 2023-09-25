@@ -66,8 +66,9 @@ export default function ValueTrips(props: IValueTripsProps) {
                   style={{
                     background: "#ff4a52",
                     position: "absolute",
-                    top: 225,
-                    padding: 6,
+                    bottom: "155px",
+                    left: 0,
+                    padding: "10px",
                     fontSize: "13px",
                     fontWeight: 700,
                   }}
@@ -79,7 +80,7 @@ export default function ValueTrips(props: IValueTripsProps) {
                         <span
                           style={{
                             textDecoration: "line-through",
-                            marginRight: 2,
+                            marginRight: 5,
                             opacity: 0.4,
                             marginLeft: 5,
                           }}
@@ -109,9 +110,8 @@ export default function ValueTrips(props: IValueTripsProps) {
                     <span>{item.sale}</span>
                   </div>
                 )}
+
                 <ImageListItemBar
-                  title={item.heading}
-                  subtitle={item.title}
                   position="below"
                   style={{
                     border: "1px solid",
@@ -124,6 +124,19 @@ export default function ValueTrips(props: IValueTripsProps) {
                   className={variableStyle.style_title}
                   actionIcon={
                     <React.Fragment>
+                      <div style={{ marginBottom: "20px" }}>
+                        <div
+                          style={{
+                            marginBottom: "10px",
+                            fontSize: "20px",
+                          }}
+                        >
+                          <h3>{item.heading}</h3>
+                        </div>
+                        <div>
+                          <span>{item.title}</span>
+                        </div>
+                      </div>
                       <div
                         style={{
                           display: "flex",
