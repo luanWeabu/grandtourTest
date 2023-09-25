@@ -15,7 +15,7 @@ export default function BaseSearch({ search, moneyDola }: IBaseInputProps) {
       id="filled-start-adorment"
       sx={{
         width: "100%",
-        color: "black",
+        color: "white",
         background: "white",
         borderRadius: "5px",
         padding: "3px",
