@@ -54,8 +54,11 @@ export default function ValueTrips(props: IValueTripsProps) {
       <Grid container justifyContent={"center"}>
         <ImageList cols={3} className={variableStyle.list_image}>
           {images.map((item) => (
-            <Grid key={item.url} sx={{ paddingBottom: "22px" }}>
-              <ImageListItem className={variableStyle.image_item_value_trip}>
+            <Grid
+              key={item.url}
+              className={`${variableStyle.image_item_value_trip}`}
+            >
+              <ImageListItem>
                 <img
                   src={item.url}
                   alt={item.title}
@@ -66,7 +69,7 @@ export default function ValueTrips(props: IValueTripsProps) {
                   style={{
                     background: "#ff4a52",
                     position: "absolute",
-                    bottom: "155px",
+                    bottom: "12px",
                     left: 0,
                     padding: "10px",
                     fontSize: "13px",
@@ -90,7 +93,7 @@ export default function ValueTrips(props: IValueTripsProps) {
                         {item.money}
                       </>
                     ) : (
-                      item.money
+                      <span>{item.money}</span>
                     )}
                   </span>
                 </div>
@@ -110,70 +113,61 @@ export default function ValueTrips(props: IValueTripsProps) {
                     <span>{item.sale}</span>
                   </div>
                 )}
-
-                <ImageListItemBar
-                  position="below"
-                  style={{
-                    border: "1px solid",
-                    paddingLeft: "15px",
-                    paddingRight: "15px",
-                    display: "flex",
-                    flexDirection: "column",
-                    borderRadius: "0 0 8px 8px",
-                  }}
-                  className={variableStyle.style_title}
-                  actionIcon={
-                    <React.Fragment>
-                      <div style={{ marginBottom: "20px" }}>
-                        <div
+              </ImageListItem>
+              <ImageListItemBar
+                position="below"
+                style={{
+                  border: "1px solid #e1d3d3",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  display: "flex",
+                  flexDirection: "column",
+                  borderRadius: "0 0 8px 8px",
+                }}
+                actionIcon={
+                  <React.Fragment>
+                    <div style={{ marginBottom: "20px" }}>
+                      <h3 style={{ fontSize: "20px", marginBottom: "10px" }}>
+                        {item.heading}
+                      </h3>
+                      <p style={{ fontSize: "14px" }}>{item.title}</p>
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        paddingBottom: "16px",
+                      }}
+                    >
+                      <div>
+                        <Rating
+                          name="size-small"
+                          defaultValue={item.rating}
+                          sx={{
+                            color: "#1ec6b6",
+                            paddingTop: "5px",
+                          }}
+                          size="small"
+                        />
+                        {item.reviews}
+                      </div>
+                      <div>
+                        <span
                           style={{
-                            marginBottom: "10px",
-                            fontSize: "20px",
+                            marginBottom: "15px",
+                            fontSize: "12px",
+                            fontWeight: "bold",
+                            opacity: 0.7,
                           }}
                         >
-                          <h3>{item.heading}</h3>
-                        </div>
-                        <div>
-                          <span>{item.title}</span>
-                        </div>
+                          <AccessTimeIcon sx={{ paddingTop: "9px" }} />
+                          {item.time}
+                        </span>
                       </div>
-                      <div
-                        style={{
-                          display: "flex",
-                          justifyContent: "space-between",
-                          paddingBottom: "16px",
-                        }}
-                      >
-                        <div>
-                          <Rating
-                            name="size-small"
-                            defaultValue={item.rating}
-                            sx={{
-                              color: "#1ec6b6",
-                              paddingTop: "5px",
-                            }}
-                            size="small"
-                          />
-                          {item.reviews}
-                        </div>
-                        <div>
-                          <span
-                            style={{
-                              marginBottom: "15px",
-                              fontSize: "12px",
-                              fontWeight: "bold",
-                              opacity: 0.7,
-                            }}
-                          >
-                            <AccessTimeIcon sx={{ paddingTop: "9px" }} />
-                            {item.time}
-                          </span>
-                        </div>
-                      </div>
-                    </React.Fragment>
-                  }
-                />
-              </ImageListItem>
+                    </div>
+                  </React.Fragment>
+                }
+              />
             </Grid>
           ))}
         </ImageList>

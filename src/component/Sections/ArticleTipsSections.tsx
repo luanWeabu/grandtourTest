@@ -61,6 +61,7 @@ export default function ArticleTips(props: IArticleTipsProps) {
                     paddingBottom: "27px",
                     paddingLeft: "30px",
                     paddingRight: "30px",
+                    color: "black",
                   }}
                 >
                   <a
@@ -69,6 +70,7 @@ export default function ArticleTips(props: IArticleTipsProps) {
                       textDecoration: "none",
                       fontSize: "13px",
                       fontWeight: "bold",
+                      color: "black",
                     }}
                   >
                     {item.date}
@@ -80,6 +82,7 @@ export default function ArticleTips(props: IArticleTipsProps) {
                       paddingTop: "10px",
                       fontSize: "23px",
                       fontWeight: "bold",
+                      color: "black",
                     }}
                   >
                     {item.heading}
@@ -89,6 +92,7 @@ export default function ArticleTips(props: IArticleTipsProps) {
                     style={{
                       paddingTop: "10px",
                       paddingBottom: "10px",
+                      color: "black",
                     }}
                   >
                     {item.title}

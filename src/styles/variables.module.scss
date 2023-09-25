@@ -121,14 +121,13 @@ $color-gray : #111827;
 }
 
 .image_item_value_trip:not(.hover_div_money) {
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 0 15px 15px 25px;
   padding-top: 10px;
-  position: relative;
 
   &:hover {
     position: relative;
     transform: translateY(-5px);
+    border-radius: 10px;
     box-shadow: 0 10px 8px 2px rgba(0, 0, 0, 0.3);
   }
 }
