@@ -51,51 +51,7 @@ export default function ArticleTips(props: IArticleTipsProps) {
             <Grid key={item.url} sx={{ paddingBottom: "80px" }}>
               <ImageListItem className={variableStyle.image_item_value_trip}>
                 <img src={item.url} alt="Image alt" />
-                <div
-                  style={{
-                    background: "#ff4a52",
-                    position: "absolute",
-                    top: 240,
-                    padding: 6,
-                    fontSize: "17px",
-                    fontWeight: 700,
-                  }}
-                  className={variableStyle.hover_div_money}
-                >
-                  <span>
-                    {item.money === "$2,500" ? (
-                      <>
-                        <span
-                          style={{
-                            textDecoration: "line-through",
-                            marginRight: 2,
-                            opacity: 0.4,
-                          }}
-                        >
-                          $5,000
-                        </span>
-                        {item.money}
-                      </>
-                    ) : (
-                      item.money
-                    )}
-                  </span>
-                </div>
-                {item.sale && (
-                  <div
-                    style={{
-                      position: "absolute",
-                      right: -20,
-                      top: 5,
-                      background: "#1ec6b6",
-                      padding: 10,
-                      borderRadius: "100%",
-                      color: "white",
-                    }}
-                  >
-                    <span>{item.sale}</span>
-                  </div>
-                )}
+
                 <div
                   style={{
                     display: "flex",
