@@ -69,7 +69,7 @@ export default function Header() {
           position: "absolute",
           justifyContent: "center",
           textAlign: "center",
-          top: "35%",
+          top: { xs: "15%", md: "30%", lg: "30%", xl: "30%" },
           flexDirection: "column",
         }}
         className={variableStyle.textHeader}

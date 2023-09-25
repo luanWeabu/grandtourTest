@@ -191,7 +191,7 @@ export default function Footer(props: IFooterProps) {
         >
           <div>© Copyright Grand Tour Theme Demo - Theme by ThemeGoods</div>
           <div className={variableStyle.footer_list_bar}>
-            <ul>
+            <ul className={variableStyle.footer_ul}>
               <li>
                 <a href="#">Home</a>
               </li>
