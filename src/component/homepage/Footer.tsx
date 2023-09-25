@@ -165,12 +165,14 @@ export default function Footer(props: IFooterProps) {
                     key={item.img}
                     style={{ paddingLeft: 5, paddingTop: 5 }}
                   >
-                    <img
-                      src={item.img}
-                      alt={item.title}
-                      loading="lazy"
-                      style={{ borderRadius: "8px" }}
-                    />
+                    <a href="#">
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        loading="lazy"
+                        style={{ borderRadius: "8px" }}
+                      />
+                    </a>
                   </ImageListItem>
                 ))}
               </ImageList>
