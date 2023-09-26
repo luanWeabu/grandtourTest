@@ -163,12 +163,16 @@ export default function NavBar(props: INavBarProps) {
                       background: "#ff4a52",
                       fontWeight: 700,
                       top: "5px",
-                      right: 0,
                     }}
                   >
                     {item.money === "$4,200" ? (
                       <>
-                        <span style={{ textDecoration: "line-through" }}>
+                        <span
+                          style={{
+                            textDecoration: "line-through",
+                            marginLeft: "8px",
+                          }}
+                        >
                           $4,900
                         </span>
                         <span style={{ marginLeft: "6px" }}>{item.money}</span>
