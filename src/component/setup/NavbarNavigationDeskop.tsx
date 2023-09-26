@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import NavbarStyle from "../../styles/navbar.module.scss";
-import { navbarListData } from "@/json/navbarItemList";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 interface NavbarNavigationDesktop {
   navbarData: [];
